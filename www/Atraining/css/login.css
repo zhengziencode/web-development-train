@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: ghostwhite;
+}
+#Time{
+    font-size: 60px;
+    width: 1800px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#formBlock{
+    width: 1800px;
+    text-align: center;
+    height: 400px;
+    background-color:gray;
+}
+
+#formBlock .formArea{
+    font-size: 45px;
+    padding-top: 100px;
+}
+
+#un, #pw{
+    width: 400px;
+    height: 45px;
+    border: solid 1px green;
+}
+
+#submitBtn{
+    width: 200px;
+    height: 45px;
+    background-color: cornsilk;
+}
+#cp{
+    text-align: center;
+}
+
+#music {
+    width:1040px;
+    height: 150px;
+    background-color: lightsteelblue;
+    text-align: center;
+    padding-left:760px;
+    padding-top:100px;
+}
+
+#music li{
+    margin-left:20px;
+    list-style: none;
+    float: left;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave words</title>
+    <link rel="stylesheet" type="text/css" href="css/leave_words.css">
+    <script type="text/javascript" src="js/leave_words.js"></script>
+</head>
+<body>
+<div id="headline" style="width: 100%;height: 60px;text-align: center;line-height: 60px;background-color: purple;font-size: 30px;"><strong>留言</strong></div>
+
+<div id="container" style="height: 1000px;">
+    <ul style="list-style: none;">
+        <li id="left_content" style="width: 20%;background-color: #024378;height: 1000px;">
+            <ul style="list-style: none;">
+                <li  class="text" ><a href="login.html"> <strong>登陆网站</strong></a></li>
+                <li  class="text" ><a href="leave_words.html"><strong>联系网站</strong></a></li>
+                <li  class="text" ><a href="individual_space.html"> <strong>个人博客</strong></a></li>
+                <li  class="text" ><a href="index.html"><strong>返回主页</strong></a></li>
+            </ul>
+        </li>
+
+        <li id="right" style="width: 80%;height: 1000px;overflow: hidden;">
+            <div id="board" style="margin-top: 60px;margin-left:20%;">
+                <input type="text" id="name_input" value="您的姓名" onblur="blur_name()" onfocus="focus_name()">
+                <br>
+                <input type="text" id="contact_input" value="您的邮件" onblur="blur_email()" onfocus="focus_email()">
+                <br>
+                <textarea cols="100" id="text_input" rows="20" style="resize: none;height: 280px;" onblur="blur_text()" onfocus="focus_text()">请在此输入留言</textarea>
+                <input type="button" id="hand_on" value="提交" onclick="hand_on()">
+            </div>
+
+            <div id="leave_words">
+                <hr style="height: 1px;border: solid 1px black;">
+                <div style="margin-top: 20px;">
+                    <ul style="list-style: none;">
+                        <li style="font-size: 20px;width:100%;text-align: center;"><strong>近期留言</strong></li>
+                        <ul  id="show_words" style="height: auto;height: 450px;">
+                            <li><p class="display"></p></li>
+                            <li><p class="display"></p></li>
+                            <li><p class="display"></p></li>
+                            <li><p class="display"></p></li>
+                        </ul><!--操作这个，每次把文本返回到这里-->
+                        <input id="pre" type="button" onclick="previous()" value="PREVIOUS" style="height: 25px;width: 120px;;right: 10px;visibility: hidden;">
+                        <input id="next" type="button" onclick="nextPage()" value="NEXT" style="height: 25px;width: 120px;;right: 10px;">
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="foot">
+    <div id="cp" style="text-align: center;">
+        <span> Copyright &copy; ZZE All rights reserved.</span>
+        <span onclick="contactUs()" style="cursor: pointer;"><strong>Contact us</strong></span>
+        <span><a href="index.html">返回首页</a> </span>
+    </div>
+</div>
+</body>
+</html>

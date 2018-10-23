@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To Login</title>
+    <script type="text/javascript" src="js/loginSrcipt.js"></script>
+    <script type="text/javascript" src="js/cookie_set.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body onload="setTime('Time')">
+<h1 id="Time">欢迎登陆</h1>
+
+<div id="formBlock">
+    <form class="formArea" method="post" action="login.php">
+        <span><strong>用户名:</strong></span>
+        <input id="un" type="text" maxlength="16" name="username">
+        <br>
+        <span><strong>密码&nbsp;&nbsp;&nbsp;&nbsp;:</strong></span>
+        <input id="pw" type="password" maxlength="16" name="password">
+        <br>
+        <input id="submitBtn" type="button" value="登    陆" onclick="loginIdentify()">
+    </form>
+</div>
+
+<audio id='audio' autoplay='autoplay'>
+    <source src="" type='audio/mp3'>
+</audio>
+<div id="foot">
+    <div id="music">
+        <ul>
+            <li><img id="lastSong" src="images/leftArrow.jpg" style="width: 80px;height: 80px;cursor: pointer;" onmousedown="lastSong()"></li>
+            <li><img id="control" src="images/playing.jpg" style="width: 80px;height: 80px;cursor: pointer;" onmousedown="control()"> </li>
+            <li><img id="nextSong" src="images/rightArrow.jpg" style="width: 80px;height: 80px;cursor: pointer;" onmousedown="nextSong()"> </li>
+        </ul>
+    </div>
+    <div id="cp" style="text-align: center">
+       <span> Copyright &copy; ZZE All rights reserved.</span>
+        <span onclick="contactUs()">Contact us</span>
+        <hr style="width: 1800px">
+        <span><a href="index.html">返回首页</a> </span>
+    </div>
+</div>
+</body>
+</html>

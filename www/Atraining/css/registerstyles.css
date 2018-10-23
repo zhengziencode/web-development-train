@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding:0;
+}
+body
+{
+  font-size: 40pt;
+}
+#Time{
+  width:1800px;
+  height:200px;
+  background-color:Black;
+  text-align:center;
+  font-size:120px;
+  color: white;
+}
+#registerBlock{
+  width:1800px;
+  height:1000px;
+  background-color:Gray;
+  font-size:80px;
+  text-align:center;
+}
+#formBlock{
+  padding-top:100px;
+}
+#formBlock input{  
+  height:80px;
+  width:600px;
+  margin-top:60px;
+  border:solid 1px green;
+  font-size:60px;
+}
+#btn{
+  height:80px;
+  width:600px;
+  font-size:60px;
+  vertical-align:middle;
+}

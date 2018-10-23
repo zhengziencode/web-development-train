@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册账号</title>
+    <link href="css/registerstyles.css" rel="stylesheet">
+    <script type="text/javascript" src="js/registerscripts.js"></script>
+    <script type="text/javascript" src="js/loginSrcipt.js"></script>
+</head>
+
+<body>
+<div id="Time">
+    <strong>欢迎注册</strong>
+</div>
+
+<div id="registerBlock">
+    <form id="formBlock" action="register.php" method="post">
+        <span>用户名&nbsp;:</span>
+        <input id="un" type="text" maxlength="16" name="username">
+        <br>
+        <span>密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
+        <input id="pw" type="password" maxlength="16" name="password">
+        <br>
+        <span>重复密码&nbsp;&nbsp;:</span>
+        <input id="pw_rpt" type="password" maxlength="16" name="password_repeat" onkeyup="CheckRepeatPW()">
+        <span><img id="correctLogo" src="images/correct.jpg" style="width: 86px;height: 58px;visibility: hidden; "></span>
+        <br>
+        <span>邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
+        <input id="email" type="text" maxlength="25" name="email">
+        <br>
+        <input id="btn" type="button" value="注册" onclick="Register()">
+        <br>
+    </form>
+</div>
+
+
+
+<div id="foot">
+    <div id="cp" style="text-align: center">
+        <span> Copyright &copy; ZZE All rights reserved.</span>
+        <span onclick="contactUs()">Contact us</span>
+        <hr style="width: 1800px">
+        <span><a href="index.html">返回首页</a> </span>
+    </div>
+</div>
+</body>
+</html>

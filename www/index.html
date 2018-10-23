@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">  
+    <meta charset="UTF-8">
+    <title>ZZEmojo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/initwin.js"></script>
+    <script type="text/javascript" src="js/cookie_set.js"></script>
+</head>
+<audio autoplay="autopaly">
+    <source src="http://vip.baidu190.com/uploads/2017/201705f9803ff49caecfefecd0884a62e9d824.mp3" type="audio/mp3" />
+</audio>
+
+<body>
+    <div id="header" onload="initWindows()">
+        <div id="logo">
+            <a href="index.html" title="ZZE"><img src="images/logo.jpg" style="display:inline-block;vertical-align: middle"> </a>
+            <a href="index.html" title="Chinese" style="color: yellow">CH</a>
+            <span style="color: yellow">/</span>
+            <a href="en.html" title="English" style="color: yellow">EN</a>
+        </div>
+
+
+        <ul id="nav">
+            <li><a href="/">&nbsp;&nbsp;首页&nbsp;&nbsp;</a> </li>
+            <li><a href="about.html" title="About me">&nbsp;&nbsp;关于&nbsp;&nbsp;</a> </li>
+            <li><a href="individual_space.html" title="Wirte and read your own blog"> &nbsp;&nbsp;个人&nbsp;&nbsp;</a></li>
+            <li><a href="leave_words.html" title="Leaving a word here!"> &nbsp;&nbsp;留言&nbsp;&nbsp;</a></li>
+            <li><a href="write.html" title="Update log,Beta"> &nbsp;&nbsp;更新&nbsp;&nbsp;</a></li>
+        </ul>
+
+        <div id="account">
+            <ul>
+                <li  id="set_opt" onclick="opt_one()">&nbsp;&nbsp;登陆&nbsp;&nbsp; </li>
+                <li  id="set_opt_sub" onclick="sub_opt()" >&nbsp;&nbsp;注册&nbsp;&nbsp; </li>
+            </ul>
+        </div>
+
+        </div>
+
+    <div id="banner">
+        <!--设置更新内容-->
+    </div>
+
+    <div id="contaioner">
+        <div id="display">
+            <ul>
+                <li id="li_pages"><img src="images/space_1.jpg" onclick="window.location.href='index.html'"></li><!--原始380x165  未选择之前50x165-->
+                <li id="li_about"><img src="images/space_2.jpg" onclick="window.location.href='about.html'"></li>
+                <li id="li_personal"><img src="images/space_3.jpg" onclick="personal()"></li>
+                <li id="leave_msg"><img src="images/space_4.jpg" onclick="leaveMsg()"></li>
+                <li id="update_info"><img src="images/space_5.jpg" onclick="window.location.href='log.html'"></li>
+                <li id="admin_page"><img src="images/space_6.jpg" onclick="window.location.href='admin.html'"></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="foot">
+        <div id="links">
+            <ul>
+                <li><a target="_blank" href="images/wxQRcodeClear.png"><img src="images/wxQRcodeUnclear.png" class="wx"></a> </li>
+                <li class="link" style="font-size: 25px; color: purple;border-right: solid 1px red;"><a  target="_blank" href="https://m.weibo.cn/p/1005053606828881" ><strong>新浪微博</strong></a></li>
+                <li class="link" style="font-size: 25px; color: purple;"><a target="_blank" href="https://tieba.baidu.com/?page=user&task=loginLayer&locate=footer_login&uid=1526289674474_928&ssid=506a5264691831d28ced35e20607e9b4.3.1526289673.1.KU5UQTJlpXUX&traceid="><strong>百度贴吧</strong></a></li>
+                <li><a href="images/QQcodeClear.jpg" target="_blank"><img src="images/QQcodeUnclear.jpg"  class="qq"></a> </li>
+            </ul>
+        </div>
+
+        <div  id="copyright"><strong>Copyright &copy; zze All rights reserved.</strong></div>
+    </div>
+</body>
+</html>
